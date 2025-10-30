@@ -172,4 +172,20 @@ display:flex; flex-direction:column; align-items:flex-end;}
 .vcol .name + .tag{margin-left:10px}
 .vcol .note{margin-top:5px}
 
+.header-row{
+  display: grid;
+  grid-template-columns: 28px 1fr 1fr;
+  align-items: end;
+  margin-bottom: 7px;
+}
+.header-row .label{
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 16px;
+  color: #222;
+  line-height: 1.1;
+}
+
 
