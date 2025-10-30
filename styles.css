@@ -26,13 +26,25 @@ body{
   box-shadow:0 2px 18px rgba(0,0,0,.05);
 }
 
-.title{
-  text-align:center;
-  color:var(--pink-strong);
-  font-size:20px;
-  font-weight:600;
-  letter-spacing:.2px;
-  margin:4px 0 28px;  
+.titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 38px 0 44px 0;
+}
+.title {
+  color: var(--pink-strong);
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 16px;
+  letter-spacing: 0.2px;
+}
+.line {
+  flex: 1;
+  height: 2px;
+  min-width: 45px;
+  background: #dbdbdb;
+  border-radius: 3px;
 }
 
 .list{display:block}
