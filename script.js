@@ -12,6 +12,10 @@ function money(n){
 
 function updateTotal(){
   const checked = formEl.querySelector('input[name="plan"]:checked');
+  if (!checked) {
+    totalEl.textContent = '';
+    return;
+  }
   const units = checked ? Number(checked.value) : 2;
   totalEl.textContent = money(priceByUnits[units]);
 }
@@ -53,9 +57,8 @@ function readCurrentSelections(){
   });
 }
 
-// set initial UI
-const initial = formEl.querySelector('input[name="plan"]:checked');
-if(initial){ openCard(initial.closest('.card')); }
+// set initial UI: nothing selected, nothing open
+cards.forEach(card => card.classList.remove('open'));
 updateTotal();
 
 
