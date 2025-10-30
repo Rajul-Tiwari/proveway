@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YAY! It's BOGO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="wrap" role="main">
+        <h1 class="title">YAY! It’s BOGO</h1>
+
+        <form class="list" id="bogoForm" aria-labelledby="bogoTitle">
+            <!-- Plan: 1 Unit -->
+            <label class="card radio" data-plan="1">
+                <input type="radio" name="plan" value="1" class="choice" />
+                <div class="body">
+                    <div class="row">
+                        <div class="left">
+                            <div class="ltop">
+                                <span class="name"><strong>1 Unit</strong></span>
+                                <span class="tag off">10% Off</span>
+                            </div>
+                            <div class="note">Standard Price</div>
+                        </div>
+                        <div class="right">
+                            <div class="price">$10.00 <span class="cur">USD</span></div>
+                            <div class="old">$24.00 USD</div>
+                        </div>
+                    </div>
+                    <div class="options" role="group" aria-label="Choose size and colour for unit 1">
+                        <div class="option-row">
+                            <div class="idx">#1</div>
+                            <div class="field">
+                                <label class="label" for="size-1u1">Size</label>
+                                <div class="select-box">
+                                    <select id="size-1u1" class="select">
+                                        <option value="S" selected>S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" for="color-1u1">Colour</label>
+                                <div class="select-box">
+                                    <select id="color-1u1" class="select">
+                                        <option value="Black" selected>Black</option>
+                                        <option value="White">White</option>
+                                        <option value="Red">Red</option>
+                                        <option value="Blue">Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </label>
+
+            <!-- Plan: 2 Unit (Most Popular) -->
+            <label class="card radio popular" data-plan="2">
+                <input type="radio" name="plan" value="2" class="choice" checked />
+                <div class="body">
+                    <div class="flag" aria-hidden="true">MOST POPULAR</div>
+                    <div class="row">
+                        <div class="left">
+                            <div class="ltop">
+                                <span class="name"><strong>2 Unit</strong></span>
+                                <span class="tag off">20% Off</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="price">$18.00 <span class="cur">USD</span></div>
+                            <div class="old">$24.00 USD</div>
+                        </div>
+                    </div>
+
+                    <div class="options" role="group" aria-label="Choose size and colour for each unit">
+                        <div class="option-row">
+                            <div class="idx">#1</div>
+                            <div class="field">
+                                <label class="label" for="size-1">Size</label>
+                                <div class="select-box">
+                                    <select id="size-1" class="select">
+                                        <option value="S" selected>S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" for="color-1">Colour</label>
+                                <div class="select-box">
+                                    <select id="color-1" class="select">
+                                        <option value="Black" selected>Black</option>
+                                        <option value="White">White</option>
+                                        <option value="Red">Red</option>
+                                        <option value="Blue">Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="option-row">
+                            <div class="idx">#2</div>
+                            <div class="field">
+                                <div class="select-box">
+                                    <select id="size-2" class="select">
+                                        <option value="S" selected>S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="select-box">
+                                    <select id="color-2" class="select">
+                                        <option value="" selected>Colour</option>
+                                        <option value="Black">Black</option>
+                                        <option value="White">White</option>
+                                        <option value="Red">Red</option>
+                                        <option value="Blue">Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </label>
+
+            <!-- Plan: 3 Unit -->
+            <label class="card radio" data-plan="3">
+                <input type="radio" name="plan" value="3" class="choice" />
+                <div class="body">
+                    <div class="row">
+                        <div class="left">
+                            <div class="ltop">
+                                <span class="name"><strong>3 Unit</strong></span>
+                                <span class="tag off">30% Off</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="price">$24.00 <span class="cur">USD</span></div>
+                            <div class="old">$24.00 USD</div>
+                        </div>
+                    </div>
+                    <div class="options" role="group" aria-label="Choose size and colour for each unit">
+                        <div class="option-row">
+                            <div class="idx">#1</div>
+                            <div class="field">
+                                <label class="label" for="size-3u1">Size</label>
+                                <div class="select-box">
+                                    <select id="size-3u1" class="select">
+                                        <option value="S" selected>S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" for="color-3u1">Colour</label>
+                                <div class="select-box">
+                                    <select id="color-3u1" class="select">
+                                        <option value="Black" selected>Black</option>
+                                        <option value="White">White</option>
+                                        <option value="Red">Red</option>
+                                        <option value="Blue">Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="option-row">
+                            <div class="idx">#2</div>
+                            <div class="field">
+                                <div class="select-box">
+                                    <select id="size-3u2" class="select">
+                                        <option value="S" selected>S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="select-box">
+                                    <select id="color-3u2" class="select">
+                                        <option value="" selected>Colour</option>
+                                        <option value="Black">Black</option>
+                                        <option value="White">White</option>
+                                        <option value="Red">Red</option>
+                                        <option value="Blue">Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="option-row">
+                            <div class="idx">#3</div>
+                            <div class="field">
+                                <div class="select-box">
+                                    <select id="size-3u3" class="select">
+                                        <option value="S" selected>S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="select-box">
+                                    <select id="color-3u3" class="select">
+                                        <option value="" selected>Colour</option>
+                                        <option value="Black">Black</option>
+                                        <option value="White">White</option>
+                                        <option value="Red">Red</option>
+                                        <option value="Blue">Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </label>
+
+            <div class="summary">
+                <div class="ship">Free Delivery</div>
+                <div class="total">Total : <span id="totalPrice">$18.00 USD</span></div>
+            </div>
+
+            <button type="button" class="btn" id="addToCart">
+                <span class="plus" aria-hidden="true">+</span>
+                Add to Cart
+            </button>
+
+            <div  class="credit">@ Powered by Pumper</div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
